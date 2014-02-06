@@ -1,0 +1,52 @@
+/*ECSS EXAMPLE*/
+
+ecss.call[teste][p1][p2]{
+}
+
+ecss.var
+	[verde='green']
+	[azul='#000fff']
+	[branco='#ffffff']{}
+			
+ecss.class [fonteGrande]{
+	font-size:40px;
+	line-height:100px;
+}
+
+ecss.class [bgpreto]{
+	background:#000;
+	display:block;
+}
+
+
+body ecss.set [background=azul][color=branco]{
+	border:1px solid red;
+} 
+
+body div ecss.extend[bgpreto]{
+	text-align:center;
+}
+
+body div a ecss.extend[fonteGrande],
+body div a ecss.set[background='verde']
+{
+	text-decoration:none;
+	color:orange
+}
+
+
+#area.s60 p ecss.scope[area]{
+	border:orange 1px solid;
+}
+
+	a ecss.set [scope=area]{
+		color:red;
+	}
+	
+body ecss.console[p1=v1][p2=v2]{
+	display:none
+}
+
+
+	
+	
